@@ -1,0 +1,373 @@
+//**************************************
+//**************   字型   **************
+//**************************************
+
+@font-face
+  font-family: "MAKINAS"
+  font-style : normal
+  font-weight: 400
+  src: local("Montserrat-Regular"), url("../fonts/MAKINAS.otf") format("opentype")
+
+
+
+
+//**************************************
+//**************   全域   **************
+//**************************************
+
+*
+  font-family:  'Open Sans', 'Meiryo', 'LiHei Pro', 'Microsoft JhengHei', '', 'sans-serif'
+
+body
+  margin-top: 6rem
+
+a
+  text-decoration: none
+  color          : #333
+
+section
+  padding: 4rem 0
+  
+  
+
+
+//**************************************
+//**************   輔助   **************
+//**************************************
+
+// Japanful
+//
+// 讓字體變成篇日系風格。
+
+.japanful,
+.japanful *
+  font-family: 'MAKINAS'
+
+
+// Cant See Me
+//
+// 隱藏元素用，不能使用 Display: none; 否則會無法偵測其位置。
+
+[class*="cant see me"]
+  opacity: 0 !important
+
+
+
+
+//**************************************
+//**************   介面   **************
+//**************************************
+
+// Cover
+//
+// 放置主要 Logo 的封面列。
+    
+.cover
+  position: relative
+  padding : 17rem 0
+  background-color: #fdcea0
+  
+  
+  // Background
+  //
+  // 背景列
+  
+  .background
+    position: absolute
+    top     : 0
+    left    : 0
+    right   : 0
+    bottom  : 0
+    background-image   : url(../images/logo/events.png)
+    background-repeat  : no-repeat
+    background-position: left bottom
+    
+    z-index: 1
+  
+  
+  // Container
+  //
+  // 放置標語的容器。
+  
+  .ts.container
+    position: relative
+    z-index : 2
+    
+    
+    // 標語
+    //
+    // 
+    
+    .ts.massive
+      font-size  : 6rem
+      font-weight: 600
+      
+      color      : #6D5A47
+      text-shadow: 0px 0px 20px rgba(212, 176, 140, 0.7)
+  
+
+// Top Navbar
+//
+// 最上方的導覽列。
+
+.top.nav
+  position  : fixed
+  top       : 0
+  left      : 0
+  right     : 0
+  z-index   : 100
+  
+  box-shadow: 0 .2rem 1rem rgba(208, 206, 206, 0.75)
+  background: rgba(255, 255, 255, 0.98)
+  
+  *
+    color     : #737373 !important
+  
+  
+  // Nav
+  //
+  // 導覽列中的容器。
+
+  nav
+    padding: .8rem 0
+    
+    @media (max-width: 767px)
+      .header
+        font-size: 2.8rem !important
+
+
+// H1 Header
+//
+// 主要的口號標語。
+  
+h1.header
+  @media (max-width: 767px)
+    font-size: 3.6rem !important
+    
+    .sub
+      margin-top: -1rem  !important
+      font-size : 1.6rem !important
+
+
+// Headers
+//
+// 所有的標題。
+
+.ts.header
+  font-weight: normal
+  
+
+// Animated
+//
+// CSS3 Animation 速度。
+
+.animated
+  animation-duration: .75s
+  
+  &.slow
+    animation-duration: .9s
+
+
+// H4 Header 
+//
+// 成員的名稱。
+
+.ts.centered.medium.header
+  @media (max-width: 767px)
+    margin-top: .8rem !important
+    font-size: 1.8rem !important
+
+
+// Services
+//
+// 放置服務的容器。
+
+.services
+  color     : #949494
+  background: #f9f9f9
+   
+   
+  // H2 Header
+  //
+  // 標題。
+  
+  h2.ts.header
+    color        : #737373 !important
+    margin-bottom: 3rem !important
+  
+  
+  // 日本文字
+  //
+  // 解說的段落。
+  
+  .japanful
+    font-size: 2rem
+
+
+// Footer
+//
+// 頁腳。
+
+footer
+  background: #333
+  padding   : 3rem 0
+
+  
+  // 置中 Logo
+  //
+  // 置中 Logo 用的欄位。
+  
+  [class*="with logo inside"]
+    display        : flex
+    flex-direction : column
+    justify-content: center
+    
+
+// Members
+//
+// 成員容器。
+
+.members 
+  background: #fff5eb
+
+  // H2 Header
+  //
+  // 標題。
+  
+  h2.ts.header
+    color        : #5F5A57 !important
+    margin-bottom: 3rem !important
+  
+  
+  // Image
+  //
+  // 頭像。
+
+  .ts.small.circular.centered.image
+    border: .5rem solid #F7EEE5  
+    
+  *
+    color: #807A75 !important
+
+
+
+
+//**************************************
+//**************   卡片   **************
+//**************************************
+
+// Tocas Card
+//
+// 主要介紹服務用的卡片。
+
+.ts.card
+  width        : 18rem !important
+  margin-bottom: 3rem
+  
+  box-shadow   : 0 .1rem 1rem 0 rgba(200, 200, 200, 0.4)
+  border       : 0
+  border-radius: .8rem
+  
+  opacity: 0.9
+  
+  
+  // 手機全寬
+  //
+  // 切換到手機版時，卡片全寬。
+  
+  @media (max-width: 767px)
+    width: 100% !important
+  
+  
+  // [&] Hover
+  //
+  // 滑過時淡入。
+  
+  &:hover
+    opacity: 1
+  
+  
+  // Image
+  //
+  // 圖片容器。
+  
+  .image
+    border-top-left-radius : .4rem
+    border-top-right-radius: .4rem
+    
+    
+    // Label
+    //
+    // 圖片上的標籤。
+    
+    .ts.label
+      font-weight: 400
+      z-index    : 100
+    
+    
+    // Img
+    //
+    // Logo 圖片。
+    
+    img
+      
+      max-width: 100%
+      z-index  : 1
+  
+  
+  // Header
+  //
+  // 服務名稱。
+  
+  .header
+    color: #6D6966 !important
+
+  
+  // Description
+  //
+  // 服務的說明。
+  
+  .description
+    color        : #909090 !important
+    margin-top   : 1rem
+    font-size    : 1.2rem !important
+    line-height  : 1.6rem
+    margin-bottom: 1rem
+    
+    @media (max-width: 767px)
+      display: none
+   
+   
+  // Colors
+  //
+  // 不同服務的背景顏色。
+  
+  &.teameow .image
+    background: #00ADEA
+  
+  &.staend .image
+    background: #6A6A6A
+  
+  &.tocas .image
+    background: linear-gradient(4deg, #67A0A6, #005778)
+   
+  &.avane .image
+    background: #D87C7C
+      
+  &.iknore .image
+    background: #569cb3
+  
+  &.karen .image
+    background: #D5EE6F
+      
+  &.jajjimento .image
+    background: #CFCF87
+  
+  &.caris .image
+    background: #313131
+      
+  &.imperium .image
+    background: #621616
+    
+    
+  

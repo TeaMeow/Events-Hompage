@@ -1,0 +1,163 @@
+@font-face {
+  font-family: "MAKINAS";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Montserrat-Regular"), url("../fonts/MAKINAS.otf") format("opentype"); }
+* {
+  font-family: "Open Sans", "Meiryo", "LiHei Pro", "Microsoft JhengHei", "", "sans-serif"; }
+
+body {
+  margin-top: 6rem; }
+
+a {
+  text-decoration: none;
+  color: #333; }
+
+section {
+  padding: 4rem 0; }
+
+.japanful,
+.japanful * {
+  font-family: "MAKINAS"; }
+
+[class*="cant see me"] {
+  opacity: 0 !important; }
+
+.cover {
+  position: relative;
+  padding: 17rem 0;
+  background-color: #fdcea0; }
+  .cover .background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url(../images/logo/events.png);
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    z-index: 1; }
+  .cover .ts.container {
+    position: relative;
+    z-index: 2; }
+    .cover .ts.container .ts.massive {
+      font-size: 6rem;
+      font-weight: 600;
+      color: #6D5A47;
+      text-shadow: 0px 0px 20px rgba(212, 176, 140, 0.7); }
+
+.top.nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  box-shadow: 0 0.2rem 1rem rgba(208, 206, 206, 0.75);
+  background: rgba(255, 255, 255, 0.98); }
+  .top.nav * {
+    color: #737373 !important; }
+  .top.nav nav {
+    padding: 0.8rem 0; }
+    @media (max-width: 767px) {
+      .top.nav nav .header {
+        font-size: 2.8rem !important; } }
+
+@media (max-width: 767px) {
+  h1.header {
+    font-size: 3.6rem !important; }
+    h1.header .sub {
+      margin-top: -1rem !important;
+      font-size: 1.6rem !important; } }
+
+.ts.header {
+  font-weight: normal; }
+
+.animated {
+  animation-duration: 0.75s; }
+  .animated.slow {
+    animation-duration: 0.9s; }
+
+@media (max-width: 767px) {
+  .ts.centered.medium.header {
+    margin-top: 0.8rem !important;
+    font-size: 1.8rem !important; } }
+
+.services {
+  color: #949494;
+  background: #f9f9f9; }
+  .services h2.ts.header {
+    color: #737373 !important;
+    margin-bottom: 3rem !important; }
+  .services .japanful {
+    font-size: 2rem; }
+
+footer {
+  background: #333;
+  padding: 3rem 0; }
+  footer [class*="with logo inside"] {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
+
+.members {
+  background: #fff5eb; }
+  .members h2.ts.header {
+    color: #5F5A57 !important;
+    margin-bottom: 3rem !important; }
+  .members .ts.small.circular.centered.image {
+    border: 0.5rem solid #F7EEE5; }
+  .members * {
+    color: #807A75 !important; }
+
+.ts.card {
+  width: 18rem !important;
+  margin-bottom: 3rem;
+  box-shadow: 0 0.1rem 1rem 0 rgba(200, 200, 200, 0.4);
+  border: 0;
+  border-radius: 0.8rem;
+  opacity: 0.9; }
+  @media (max-width: 767px) {
+    .ts.card {
+      width: 100% !important; } }
+  .ts.card:hover {
+    opacity: 1; }
+  .ts.card .image {
+    border-top-left-radius: 0.4rem;
+    border-top-right-radius: 0.4rem; }
+    .ts.card .image .ts.label {
+      font-weight: 400;
+      z-index: 100; }
+    .ts.card .image img {
+      max-width: 100%;
+      z-index: 1; }
+  .ts.card .header {
+    color: #6D6966 !important; }
+  .ts.card .description {
+    color: #909090 !important;
+    margin-top: 1rem;
+    font-size: 1.2rem !important;
+    line-height: 1.6rem;
+    margin-bottom: 1rem; }
+    @media (max-width: 767px) {
+      .ts.card .description {
+        display: none; } }
+  .ts.card.teameow .image {
+    background: #00ADEA; }
+  .ts.card.staend .image {
+    background: #6A6A6A; }
+  .ts.card.tocas .image {
+    background: linear-gradient(4deg, #67A0A6, #005778); }
+  .ts.card.avane .image {
+    background: #D87C7C; }
+  .ts.card.iknore .image {
+    background: #569cb3; }
+  .ts.card.karen .image {
+    background: #D5EE6F; }
+  .ts.card.jajjimento .image {
+    background: #CFCF87; }
+  .ts.card.caris .image {
+    background: #313131; }
+  .ts.card.imperium .image {
+    background: #621616; }
+
+/*# sourceMappingURL=style.css.map */
